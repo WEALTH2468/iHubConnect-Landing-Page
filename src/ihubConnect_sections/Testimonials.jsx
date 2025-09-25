@@ -63,7 +63,7 @@ export default function Testimonials() {
       </h2>
       <p className="text-center max-w-3xl mx-auto text-[25px] text-gray-600 mb-12">
         Everything you need to modernize your business operations and stay
-        competitive in today's digital landscape.
+        competitive in today's digital landscape tech.
       </p>
 
       <div className=" ">
