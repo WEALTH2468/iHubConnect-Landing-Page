@@ -205,6 +205,9 @@ function App() {
         </div>
       </section>
 
+      {/* Why Digitalize? */}
+      <WhyDigitalize />
+
       {/* Features */}
       <Features />
 
