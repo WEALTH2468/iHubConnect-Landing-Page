@@ -3,9 +3,9 @@ import { featureCard, featureScroll } from "../utils/Feature";
 
 function WhyDigitalze() {
   return (
-    <div className="mx-15 py-30 bg[#f7f6fe]">
-      <div className="flex flex-col gap-6 pb-[100px]">
-        <p className="text-center text-[13px]">
+    <div className="mx-15 pt-[70px] bg[#f7f6fe]">
+      <div className="flex flex-col gap-6 pb-[70px]">
+        <p className="text-center text-[25px] text-gray-600">
           Trusted by teams at over 1,000 of the worlds leading organizations
         </p>
         <div className="overflow-hidden w-full max-w-[1400px] mx-auto ">
@@ -21,34 +21,36 @@ function WhyDigitalze() {
       </div>
       <div className="text-center flex flex-col items-center gap-10">
         <div className="">
-          <div className="p-[2px] rounded bg-gradient-to-r from-orange-500 to-transparent inline-block">
+          <div className="p-[2px] rounded bg-gradient-to-r from-orange-600 to-transparent inline-block">
             <button className="rounded bg-white py-1 px-6 ">Features</button>
           </div>
 
-          <h2 className="text-5xl font-[400] text-orange-500 py-5">
-            Why <span className=" text-orange-400">Digitalize?</span>
+          <h2 className="text-5xl font-[400] text-orange-600 py-5">
+            Why <span className=" text-orange-500">Digitalize?</span>
           </h2>
 
           <div>
-            <p className="text-[15px]">
+            <p className="text-[25px] text-gray-600">
               From Organization to Growth — Here’s Why
             </p>
-            <p className="text-[15px]">Your Business Must Digitalize.</p>
+            <p className="text-[25px] text-gray-600">
+              Your Business Must Digitalize.
+            </p>
           </div>
         </div>
         {/* card */}
         <div>
-          <div className="flex justify-center gap-10 relative">
+          <div className="flex justify-center gap-10 relative py-[50px]">
             {featureCard.map((item, index) => (
               <div
                 key={item.id}
                 className={`p-4 border-2 border-gray-300 rounded-xl transform duration-300 transition-transform ${item.rotate} ${item.color} 
-        hover:z-[999] hover:scale-105 p-10 h-[212px] -ml-10 first:ml-0 flex flex-col items-start text-left z-0 max-w-[312px]`}
+        hover:z-[999] hover:scale-105  h-[212px] -ml-10 first:ml-0 flex flex-col items-start text-left z-0 max-w-[312px]`}
                 style={{ backgroundColor: item.backgroundColor }}
               >
                 <div className="icon text-3xl mb-2">{item.image}</div>
                 <p
-                  className={`font-medium ${
+                  className={`text-[14px] ${
                     index === 0 ? "text-white" : "text-black"
                   }`}
                 >

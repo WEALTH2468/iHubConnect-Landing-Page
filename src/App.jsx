@@ -2,6 +2,7 @@ import React from "react";
 import WhyDigitalize from "./ihubConnect_sections/WhyDigitalze";
 import { useEffect, useState } from "react";
 import Features from "./ihubConnect_sections/Features";
+import Pricing from "./ihubConnect_sections/Pricing";
 
 function App() {
   const [current, setCurrent] = useState(0);
@@ -210,6 +211,9 @@ function App() {
 
       {/* Features */}
       <Features />
+
+      {/* Pricing */}
+      <Pricing />
 
       {/* Footer */}
       <footer className="bg-neutral-900 text-gray-400 px-10 py-12">

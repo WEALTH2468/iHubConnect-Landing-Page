@@ -66,7 +66,7 @@ function Features() {
   return (
     <section className="py-16 bg-[#fafafa] text-center font-sans">
       {/* Title */}
-      <h2 className="text-5xl font-semibold mb-4">
+      <h2 className="text-5xl font-[400] mb-4">
         Why <span className="text-orange-600">Businesses Love</span> Us?
       </h2>
       <p className="text-[25px] text-gray-600 mb-12 max-w-3xl mx-auto">
@@ -167,7 +167,7 @@ function Features() {
           <button className="rounded bg-white py-1 px-6 ">Features</button>
                     
         </div>
-        <h1 className="text-5xl font-semibold text-orange-600 mb-6">
+        <h1 className="text-5xl font-[400] text-orange-600 mb-6">
           Get Started
         </h1>
         <p className="max-w-2xl mx-auto text-lg text-gray-600 mb-12">
