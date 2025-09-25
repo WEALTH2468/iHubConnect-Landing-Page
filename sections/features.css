@@ -1,0 +1,394 @@
+/* Reset */
+
+ @font-face {
+  font-family: 'Photora';
+  src: url('fonts/Photora.woff2') format('woff2'),
+       url('fonts/Photora.woff') format('woff'),
+       url('fonts/Photora.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Photora', sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #111;
+  /* padding: 2rem; */
+  /* text-align: center; */
+  font-family: 'Photora', sans-serif;
+}
+
+/* Section Styling */
+/* .love-section {
+  margin: 4rem auto;
+  max-width: 1200px;
+} */
+
+.love-title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.love-title span {
+  color: #f17e45;
+}
+
+.love-subtitle {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #555;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards Grid */
+.love-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+  gap: 1.5rem;
+  justify-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.love-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+  width: 100%;
+  max-width: 300px; /* optional, so cards don’t stretch too much */
+}
+
+.love-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  border: 1px solid #f17e45;
+}
+
+.love-icon {
+  background: #f17e45;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.love-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.love-card p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive: reduce columns on smaller screens */
+@media (max-width: 1200px) {
+  .love-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .love-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .love-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 2800px) {
+  .love-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    justify-self: center;
+  }
+}
+
+ /* Section with video background */
+    .hero-section {
+        margin-top: 50px;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      color: white;
+    }
+
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;     
+      z-index: -2;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 5, 0, 0.807);
+      z-index: -1;
+    }
+
+    .hero-content {
+      /* max-width: 900px; */
+      /* padding-top: 80px; */
+    }
+
+    .hero-content h1 {
+      font-size: 2.3rem;
+  font-weight: 600;
+      margin-bottom: 2.5rem;
+      max-width: 900px;
+      justify-self: center;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      font-weight: 100;
+      /* line-height: 1.6; */
+      max-width: 800px;
+      justify-self: center;
+    }
+
+    /* Service boxes */
+    .services {
+      display: flex;
+      justify-content: start;
+      gap: 50px;
+      margin-top: 2rem;
+    }
+
+    .service-box {
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .service-box i {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+      display: inline-block;
+    }
+
+    .service-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-box p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    /* Floating table image */
+    .table-section {
+      position: relative;
+      margin-top: -120px; /* overlap effect */
+      display: flex;
+      justify-content: center;
+    }
+
+    .table-section img {
+      width: 80%;
+      height: 50%;
+      max-width: 1100px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .hero-content p {
+        font-size: 1rem;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+ .get-started {
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+    max-width: 1000px;
+    align-self: center;
+    margin: 0 auto;
+    /* justify-self: center; */
+}
+
+.feature-btn {
+  border: 1px solid #f17e45;
+  background: transparent;
+  color: #f17e45;
+  font-size: 0.9rem;
+  padding: 0.3rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.get-started h1 {
+    font-size: 2.5rem;
+    color: #cc632f;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.get-started p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Steps Section */
+.steps {
+  display: flex;
+  justify-content: space-around;
+  position: relative; /* allow pseudo-element positioning */
+  align-self: center;
+  margin: 0 auto;
+  padding-left: 55px;
+  /* justify-self: center; */
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  max-width: 650px;
+  background-color: #ee5f0c97;
+  z-index: 0;
+  align-self: center;
+  margin: 0 auto;
+  /* justify-self: center; */
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* ensure circles are above the line */
+}
+
+.step-number {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #7f3e2f;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 3px solid #7f3e2f;
+  position: relative;
+  z-index: 1; /* keep circles above line */
+}
+
+.step p { font-size: 16px; color: #333; font-weight: 500; }
+
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b74e37;
+    padding-top: 40px;
+    border-radius: 10px;
+    max-width: 70%;
+    align-self: center;
+    margin: 0 auto;
+    align-content: center;
+
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Lines between sections */
+.stats {
+    margin-top: 40px;
+}
+
+.stats .stat {
+    position: relative;
+    padding: 0 20px;
+}
+
+/* .stats .stat:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    height: 1px;
+    width: 50px;
+    background-color: #7f3e2f;
+    transform: translateY(-50%);
+} */

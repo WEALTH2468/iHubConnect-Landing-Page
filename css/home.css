@@ -1,0 +1,330 @@
+/* Hero Section (Slider) */
+
+  @font-face {
+  font-family: 'Photora';
+  src: url('fonts/Photora.woff2') format('woff2'),
+       url('fonts/Photora.woff') format('woff'),
+       url('fonts/Photora.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Photora', sans-serif;
+}
+
+
+.slider {
+    font-family: 'Photora', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  /* margin-top: -50px; */
+}
+
+.slides {
+    font-family: 'Photora', sans-serif;
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+    font-family: 'Photora', sans-serif;
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.overlay {
+    font-family: 'Photora', sans-serif;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(11, 5, 0, 0.807);
+}
+
+.content {
+    font-family: 'Photora', sans-serif;
+  position: relative;
+  max-width: 900px;
+  padding-left: 20px;
+  padding-top: 30px;
+  z-index: 2;
+  text-align: left;
+}
+
+.content h1 {
+    font-family: 'Photora', sans-serif;
+  font-size: 3.0rem;
+  line-height: 1.3;
+}
+.content h1 span {
+    font-family: 'Photora', sans-serif;
+  color: #f46c20;
+}
+.content p {
+    font-family: 'Photora', sans-serif;
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.buttons {
+    font-family: 'Photora', sans-serif;
+  margin: 20px 0;
+}
+.btn-orange {
+    font-family: 'Photora', sans-serif;
+  background: #f46c20;
+  padding: 10px 20px;
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.btn-outline {
+    font-family: 'Photora', sans-serif;
+  /* border: 2px solid #f46c20; */
+  padding: 10px 20px;
+  color: #f46c20;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.info-box {
+    font-family: 'Photora', sans-serif;
+  margin-top: 30px;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.experience-section {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Photora', sans-serif;
+  border-radius: 5px;
+}
+
+.experience-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.experience-number {
+  font-size: 80px;
+  font-weight: 700;
+  color: #f46c20; /* orange */
+}
+
+.experience-text {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.experience-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 20px;
+  border-left: 2px solid #f46c20;
+  padding-left: 20px;
+  max-width: 600px;
+}
+
+
+.slider-controls {
+    font-family: 'Photora', sans-serif;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.slider-indicators {
+    font-family: 'Photora', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.slider-indicators span {
+    font-family: 'Photora', sans-serif;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+.slider-indicators .active {
+    font-family: 'Photora', sans-serif;
+  background: #f46c20;
+}
+
+.footer {
+  background-color: #0f0f0f;
+  padding: 40px 60px;
+  color: #ccc;
+  min-height: 300px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-about {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-about img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  margin-bottom: 15px;
+  max-width: 300px;
+  font-size: 14px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #ccc;
+  font-size: 18px;
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #e65100;
+  color: #fff;
+}
+
+.footer-menu, .footer-info {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer-menu h4,
+.footer-info h4,
+.footer-newsletter h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  justify-self: start;
+  padding-left: 25px;
+}
+
+.footer-menu ul,
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+  justify-self: start;
+}
+
+.footer-menu ul li,
+.footer-info ul li {
+  margin-bottom: 10px;
+  justify-self: start;
+}
+
+.footer-menu ul li a,
+.footer-info ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+  justify-self: start;
+}
+
+.footer-menu ul li a:hover,
+.footer-info ul li a:hover {
+  color: #e65100;
+}
+
+.footer-newsletter {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-newsletter form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  background-color: #e65100;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background 0.3s;
+}
+
+.footer-newsletter button:hover {
+  background-color: #ff6f00;
+}
+
+.footer hr {
+  margin: 40px 0 20px;
+  border: 0.5px solid #2b2b2b;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-divider {
+  margin: 40px 0 20px;
+   background-color: #ff6f00;
+}   
+
+.footer-bottom strong {
+  color: #fff;
+}
+
+@media (min-width: 1600px) {
+  .footer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
