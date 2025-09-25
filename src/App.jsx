@@ -2,7 +2,9 @@ import React from "react";
 import WhyDigitalize from "./ihubConnect_sections/WhyDigitalze";
 import { useEffect, useState } from "react";
 import Features from "./ihubConnect_sections/Features";
+import Testimonials from "./ihubConnect_sections/Testimonials";
 import Pricing from "./ihubConnect_sections/Pricing";
+
 
 function App() {
   const [current, setCurrent] = useState(0);
@@ -212,6 +214,7 @@ function App() {
       {/* Features */}
       <Features />
 
+      <Testimonials/>
       {/* Pricing */}
       <Pricing />
 
