@@ -5,6 +5,14 @@ import Features from "./ihubConnect_sections/Features";
 import Testimonials from "./ihubConnect_sections/Testimonials";
 import Pricing from "./ihubConnect_sections/Pricing";
 import AboutUs from "./ihubConnect_sections/AboutUs";
+import { Link } from "react-scroll";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 function App() {
   const [current, setCurrent] = useState(0);
@@ -13,7 +21,7 @@ function App() {
   const slides = [
     {
       id: 1,
-      image: "images/ihub-slider1.jpg",
+      image: "images/ihub-slider3.jpg",
       title: "Because Every Business Deserves",
       highlight: "Clarity, Control, and Connection.",
       text: "Stay organized, improve teamwork, and manage customers and invoices in one simple digital space.",
@@ -21,7 +29,7 @@ function App() {
     },
     {
       id: 2,
-      image: "images/ihub-slider2.jpg",
+      image: "images/ihub-slider1.jpg",
       title: "Boost Your Productivity With",
       highlight: "Smart Tools.",
       text: "Manage workflows, tasks, and invoices with ease using iHubConnect.",
@@ -29,7 +37,7 @@ function App() {
     },
     {
       id: 3,
-      image: "images/ihub-slider1.jpg",
+      image: "images/ihub-slider2.jpg",
       title: "Stay Ahead With",
       highlight: "Digital Transformation.",
       text: "Embrace technology and give your business the competitive edge.",
@@ -53,7 +61,7 @@ function App() {
   }, [slides.length]);
 
   return (
-    <div className="font-sans bg-[#fafafa]">
+    <div className="font-sans">
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-black/70 text-white shadow-lg">
         <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
@@ -65,45 +73,80 @@ function App() {
             />
             <span className="text-orange-600">iHUBCONNECT</span>
           </a>
+
           <ul className="hidden md:flex gap-9">
             <li>
-              <a href="#home" className="hover:text-orange-500 text-[20px]">
+              <Link
+                to="home"
+                smooth={true}
+                duration={700}
+                spy={true}
+                activeClass="text-orange-600"
+                className="cursor-pointer hover:text-orange-500 text-[20px]"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#whyDigitalize"
-                className="hover:text-orange-500 text-[20px]"
+              <Link
+                to="whyDigitalize"
+                smooth={true}
+                duration={700}
+                spy={true}
+                activeClass="text-orange-600"
+                className="cursor-pointer hover:text-orange-500 text-[20px]"
               >
                 Why digitalize
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#features" className="hover:text-orange-500 text-[20px]">
+              <Link
+                to="features"
+                smooth={true}
+                duration={700}
+                spy={true}
+                activeClass="text-orange-600"
+                className="cursor-pointer hover:text-orange-500 text-[20px]"
+              >
                 Features
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#testimonials"
-                className="hover:text-orange-500 text-[20px]"
+              <Link
+                to="testimonials"
+                smooth={true}
+                duration={700}
+                spy={true}
+                activeClass="text-orange-600"
+                className="cursor-pointer hover:text-orange-500 text-[20px]"
               >
                 Testimonials
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#aboutUs" className="hover:text-orange-500 text-[20px]">
+              <Link
+                to="aboutUs"
+                smooth={true}
+                duration={700}
+                spy={true}
+                activeClass="text-orange-600"
+                className="cursor-pointer hover:text-orange-500 text-[20px]"
+              >
                 About iHub
-              </a>
+              </Link>
             </li>
           </ul>
-          <a
-            href="#pricing"
-            className="hidden md:inline-block bg-orange-600 px-12 py-3 rounded-full text-white font-semibold hover:bg-orange-600"
+
+          <Link
+            to="pricing"
+            smooth={true}
+            duration={700}
+            spy={true}
+            activeClass="bg-orange-700"
+            className="hidden md:inline-block bg-orange-600 px-12 py-3 rounded-full text-white font-semibold hover:bg-orange-700 cursor-pointer"
           >
             Get Organized
-          </a>
+          </Link>
         </nav>
       </header>
 
@@ -119,7 +162,7 @@ function App() {
               className="min-w-full h-screen bg-cover bg-center relative flex items-center pl-[10%] pt-5"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-black/70"></div>
+              <div className="absolute inset-0 bg-[#270f0499]"></div>
               <div className="relative z-10 max-w-4xl px-6 text-left text-white">
                 <h1 className="text-4xl md:text-5xl font-bold leading-snug">
                   {slide.title}{" "}
@@ -205,28 +248,38 @@ function App() {
         </div>
       </section>
 
-      <section className="bg[#f7f6fe]" id="whyDigitalize">
-        {/* Why Digitalize? */}
+      <section
+        id="whyDigitalize"
+        className="bg-gradient-to-r from-white via-[#fff7f3] to-[#fde6d9]"
+      >
         <WhyDigitalize />
       </section>
 
-      <section className="bg[#f7f6fe]" id="features">
-        {/* Features */}
+      <section
+        id="features"
+        className="bg-gradient-to-r from-white via-[#fff7f3] to-[#fde6d9]"
+      >
         <Features />
       </section>
 
-      <section className="bg[#f7f6fe]" id="testimonials">
-        {/* Testimonials */}
+      <section
+        id="testimonials"
+        className="bg-gradient-to-r from-white via-[#fff7f3] to-[#fde6d9]"
+      >
         <Testimonials />
       </section>
 
-      <section className="bg[#f7f6fe]" id="aboutUs">
-        {/* About Us */}
+      <section
+        id="aboutUs"
+        className="bg-gradient-to-r from-white via-[#fff7f3] to-[#fde6d9]"
+      >
         <AboutUs />
       </section>
 
-      <section className="bg[#f7f6fe]" id="pricing">
-        {/* Pricing */}
+      <section
+        id="pricing"
+        className="bg-gradient-to-r from-white via-[#fff7f3] to-[#fde6d9]"
+      >
         <Pricing />
       </section>
 
@@ -240,43 +293,65 @@ function App() {
               alt="Logo"
               className="h-12 mb-4"
             />
-            <p className="text-sm">
+            <p className="text-[16px]">
               iHubConnect helps businesses stay organized and connected with
               modern digital tools.
             </p>
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-4 mt-6">
               <a
-                href="#"
-                className="p-2 bg-neutral-800 rounded-full hover:bg-orange-600"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-300 hover:text-orange-500 text-xl"
               >
-                Fb
+                <FaFacebookF />
               </a>
               <a
-                href="#"
-                className="p-2 bg-neutral-800 rounded-full hover:bg-orange-600"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-300 hover:text-orange-500 text-xl"
               >
-                Tw
+                <FaTwitter />
               </a>
               <a
-                href="#"
-                className="p-2 bg-neutral-800 rounded-full hover:bg-orange-600"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-300 hover:text-orange-500 text-xl"
               >
-                In
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-300 hover:text-orange-500 text-xl"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-300 hover:text-orange-500 text-xl"
+              >
+                <FaYoutube />
               </a>
             </div>
           </div>
 
           {/* Menu */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Menu</h4>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-white font-bold mb-4">Menu</h3>
+            <ul className="space-y-2 text-[16px]">
               <li>
                 <a href="#home" className="hover:text-orange-500">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#features-section" className="hover:text-orange-500">
+                <a href="#features" className="hover:text-orange-500">
                   Features
                 </a>
               </li>
@@ -286,7 +361,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="#about-us" className="hover:text-orange-500">
+                <a href="#aboutUs" className="hover:text-orange-500">
                   About
                 </a>
               </li>
@@ -295,20 +370,20 @@ function App() {
 
           {/* Info */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Info</h4>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-white font-bold mb-4">Info</h3>
+            <ul className="space-y-2 text-[16px]">
               <li>
-                <a href="#" className="hover:text-orange-500">
+                <a href="#" className="hover:text-orange-600">
                   Support
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-500">
+                <a href="#" className="hover:text-orange-600">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-500">
+                <a href="#" className="hover:text-orange-600">
                   Terms & Conditions
                 </a>
               </li>
@@ -317,7 +392,7 @@ function App() {
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Newsletter</h4>
+            <h3 className="text-white font-bold mb-4">Newsletter</h3>
             <form className="flex">
               <input
                 type="email"
@@ -326,7 +401,7 @@ function App() {
               />
               <button
                 type="submit"
-                className="bg-orange-600 px-4 py-2 rounded-r text-white hover:bg-orange-500"
+                className="bg-orange-600 px-4 py-2 rounded-r text-white hover:bg-orange-600"
               >
                 Subscribe
               </button>

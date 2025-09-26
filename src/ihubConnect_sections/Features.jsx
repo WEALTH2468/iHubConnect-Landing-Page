@@ -64,7 +64,7 @@ function Features() {
   ];
 
   return (
-    <section className="py-16 bg-[#fafafa] text-center font-sans">
+    <section className="py-16 text-center font-sans">
       {/* Title */}
       <h2 className="text-5xl font-[400] mb-4">
         Why <span className="text-orange-600">Businesses Love</span> Us?
@@ -79,7 +79,7 @@ function Features() {
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-xl shadow-md p-6 text-left border border-transparent hover:border-orange-600 hover:shadow-lg transition-transform transform hover:-translate-y-1"
+            className="bg-[#fffcf9] rounded-xl shadow-md p-6 text-left border border-transparent hover:border-orange-600 hover:shadow-lg transition-transform transform hover:-translate-y-1"
           >
             <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-orange-600 text-white text-2xl mb-4">
               {feature.icon}
@@ -106,7 +106,7 @@ function Features() {
           <source src="/videos/ihub-video.mp4" type="video/mp4" />
         </video>
 
-        <div className="absolute top-0 left-0 w-full h-full bg-black/70 "></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[#270f0499] "></div>
 
         <div className="px-6 z-30">
           <h1 className="text-[2.5rem] font-semibold max-w-4xl mx-auto mb-5 -mt-20">
@@ -151,11 +151,17 @@ function Features() {
 
       {/* FLOATING IMAGE */}
       <section className="relative -mt-28 flex justify-center">
-        <img
-          src="/images/Screenshot 2025-09-25 144957.png"
-          alt="Table"
-          className="w-4/5 max-w-5xl rounded-xl shadow-lg"
-        />
+        <div className="relative w-4/5 max-w-5xl">
+          {/* Image */}
+          <img
+            src="/images/Screenshot 2025-09-25 144957.png"
+            alt="Table"
+            className="w-full rounded-xl shadow-lg"
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-orange-200/20 rounded-xl"></div>
+        </div>
       </section>
 
       {/* GET STARTED SECTION */}
@@ -167,15 +173,15 @@ function Features() {
         <h1 className="text-5xl font-[400] text-orange-600 mb-6">
           Get Started
         </h1>
-        <p className="max-w-2xl mx-auto text-lg text-gray-600 mb-12">
+        <p className="max-w-2xl mx-auto text-[22px] text-gray-600 mb-12">
           We've made it easy for you to set up, so you can focus on growing your
           business — not figuring out the process.
         </p>
 
         {/* Steps */}
-        <div className="relative flex justify-between items-center max-w-4xl mx-auto px-6">
+        <div className="relative flex justify-between items-center max-w-[100%] mx-auto px-6">
           {/* Center line */}
-          <div className="absolute left-0 right-0 top-11 -translate-y-1/2 h-[3px] bg-gradient-to-r from-[#FE626233] via-[#FE6262] to-[#FE626233]"></div>
+          <div className="absolute left-0 right-0 top-11 -translate-y-1/2 h-[3px] bg-gradient-to-r from-[#FE626233] via-[#FE6262] to-[#FE626233] max-w-[800px] justify-center mx-auto"></div>
 
           {[
             "Setup your Organization",
@@ -186,16 +192,18 @@ function Features() {
               key={i}
               className="flex flex-col items-center justify-around z-10"
             >
-              <div className="size-20 flex items-center justify-center bg-[#20242A] text-white font-bold rounded-full border-2 border-[#F7C8B3] mb-2">
+              <div className="size-20 flex items-center justify-center bg-[#20242A] text-white font-bold rounded-full border-2 border-[#F7C8B3] mb-2 gap-[40px]">
                 {i + 1}
               </div>
-              <p className="text-base font-medium text-center">{title}</p>
+              <p className="text-base font-medium text-center max-w-[150px]">
+                {title}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Stats */}
-        <div className="flex justify-around bg-gradient-to-r from-[#E44C09] to-[#451703] text-white rounded-lg max-w-3xl mx-auto mt-12 py-8">
+        <div className="flex justify-around bg-gradient-to-r from-[#E44C09] to-[#451703] text-white rounded-lg max-w-[700px] mx-auto mt-12 py-8">
           <div className="text-center">
             <h6 className="text-xl font-bold">500+</h6>
             <p>Companies onboarded</p>

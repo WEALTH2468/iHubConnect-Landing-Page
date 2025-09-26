@@ -113,7 +113,7 @@ export default function Testimonials() {
             {testimonialsRow2.map((t) => (
               <div
                 key={t.id}
-                className="min-w-[320px] max-w-[320px] bg-white border border-gray-200 rounded-lg shadow-lg p-6"
+                className="min-w-[320px] max-w-[320px] bg-[#fffcf9] border border-gray-200 rounded-lg shadow-lg p-6"
               >
                 <p className="text-gray-600 italic mb-6">{t.text}</p>
                 <div

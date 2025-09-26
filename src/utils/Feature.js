@@ -27,6 +27,7 @@ export const featureCard = [
     icon: CubeIcon,
     backgroundColor: "#eaad43",
     rotate: "rotate-0",
+    color: "text-white",
   },
   {
     id: 3,
@@ -37,6 +38,7 @@ export const featureCard = [
     icon: FolderOpenIcon,
     backgroundColor: "#e89d80",
     rotate: "rotate-8",
+    color: "text-white",
   },
   {
     id: 4,
@@ -47,6 +49,7 @@ export const featureCard = [
     icon: ChartBarIcon,
     backgroundColor: "#aedc45",
     rotate: "rotate-0",
+    color: "text-white",
   },
 ];
 
