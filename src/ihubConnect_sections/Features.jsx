@@ -176,24 +176,29 @@ function Features() {
         </p>
 
         {/* Steps */}
-        <div className="relative flex justify-around items-center max-w-4xl mx-auto px-6">
-          <div className="absolute top-6 left-10 right-10 h-[3px] bg-orange-400/70"></div>
+        <div className="relative flex justify-between items-center max-w-4xl mx-auto px-6">
+          {/* Center line */}
+          <div className="absolute left-0 right-0 top-11 -translate-y-1/2 h-[3px] bg-gradient-to-r from-[#FE626233] via-[#FE6262] to-[#FE626233]"></div>
+
           {[
             "Setup your Organization",
             "Invite Team mates/customers",
             "Start Interacting, Get organised",
           ].map((title, i) => (
-            <div key={i} className="flex flex-col items-center z-10">
-              <div className="w-12 h-12 flex items-center justify-center bg-[#7f3e2f] text-white font-bold rounded-full border-4 border-[#7f3e2f] mb-2">
+            <div
+              key={i}
+              className="flex flex-col items-center justify-around z-10"
+            >
+              <div className="size-20 flex items-center justify-center bg-[#20242A] text-white font-bold rounded-full border-2 border-[#F7C8B3] mb-2">
                 {i + 1}
               </div>
-              <p className="text-base font-medium">{title}</p>
+              <p className="text-base font-medium text-center">{title}</p>
             </div>
           ))}
         </div>
 
         {/* Stats */}
-        <div className="flex justify-around bg-[#b74e37] text-white rounded-lg max-w-3xl mx-auto mt-12 py-8">
+        <div className="flex justify-around bg-gradient-to-r from-[#E44C09] to-[#451703] text-white rounded-lg max-w-3xl mx-auto mt-12 py-8">
           <div className="text-center">
             <h6 className="text-xl font-bold">500+</h6>
             <p>Companies onboarded</p>
