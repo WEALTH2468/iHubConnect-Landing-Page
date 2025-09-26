@@ -41,30 +41,35 @@ function WhyDigitalze() {
         {/* card */}
         <div>
           <div className="flex justify-center gap-10 relative py-[50px]">
-            {featureCard.map((item, index) => (
-              <div
-                key={item.id}
-                className={`p-4 border-2 border-gray-300 rounded-xl transform duration-300 transition-transform ${item.rotate} ${item.color} 
-        hover:z-[999] hover:scale-105  h-[212px] -ml-10 flex flex-col items-start text-left z-0 max-w-[300px]`}
-                style={{ backgroundColor: item.backgroundColor }}
-              >
-                <div className="icon text-3xl mb-2">{item.image}</div>
-                <p
-                  className={`text-[14px] ${
-                    index === 0 ? "text-white" : "text-black"
-                  }`}
+            {featureCard.map((item, index) => {
+              const Icon = item.icon; // 👈 assign the icon component
+              return (
+                <div
+                  key={item.id}
+                  className={`p-4 border-2 border-gray-300 rounded-xl transform duration-300 transition-transform ${item.rotate} ${item.color} 
+        hover:z-[999] hover:scale-105 h-[212px] -ml-10 flex flex-col items-start text-left z-0 max-w-[300px]`}
+                  style={{ backgroundColor: item.backgroundColor }}
                 >
-                  {item.description}
-                </p>
-                <p
-                  className={`text-sm mt-2 ${
-                    index === 0 ? "text-gray-200" : "text-gray-600"
-                  }`}
-                >
-                  {item.subDescription}
-                </p>
-              </div>
-            ))}
+                  {/* ✅ Use as component */}
+                  <Icon className="h-8 w-8 mb-2" />
+
+                  <p
+                    className={`text-[14px] ${
+                      index === 0 ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {item.description}
+                  </p>
+                  <p
+                    className={`text-sm mt-2 ${
+                      index === 0 ? "text-gray-200" : "text-gray-600"
+                    }`}
+                  >
+                    {item.subDescription}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

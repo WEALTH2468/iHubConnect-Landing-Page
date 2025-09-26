@@ -1,12 +1,20 @@
+import {
+  PencilSquareIcon,
+  CubeIcon,
+  FolderOpenIcon,
+  ChartBarIcon,
+} from "@heroicons/react/24/solid";
+
+
 export const featureCard = [
   {
     id: 1,
     description:
-      "          Keep every task, project, and follow-up in one place — no more scattered files or missed deadlines.",
+      "Keep every task, project, and follow-up in one place — no more scattered files or missed deadlines.",
     subDescription:
-      "          We make work simpler, customers happier, and growth easier.",
-    image: "📝",
-    backgroundColor: "#00656d ",
+      "We make work simpler, customers happier, and growth easier.",
+    icon: PencilSquareIcon,
+    backgroundColor: "#00656d",
     rotate: "-rotate-8",
     color: "text-white",
   },
@@ -16,7 +24,7 @@ export const featureCard = [
       "Connect your team, improve communication, and get more done together.",
     subDescription:
       "From teamwork to customer care, we help businesses do more with less stress.",
-    image: "📦",
+    icon: CubeIcon,
     backgroundColor: "#eaad43",
     rotate: "rotate-0",
   },
@@ -26,7 +34,7 @@ export const featureCard = [
       "Your data stays safe, securely stored, and well-organized — with records preserved and protected from damages.",
     subDescription:
       "Tools that grow with your business, built to adapt as your needs evolve.",
-    image: "📦",
+    icon: FolderOpenIcon,
     backgroundColor: "#e89d80",
     rotate: "rotate-8",
   },
@@ -36,11 +44,12 @@ export const featureCard = [
       "Track performance across every part of your business with detailed reports and real-time analytics.",
     subDescription:
       "Giving you the clarity and confidence to make smarter decisions.",
-    image: "📂",
+    icon: ChartBarIcon,
     backgroundColor: "#aedc45",
     rotate: "rotate-0",
   },
 ];
+
 export const featureScroll = [
   {
     id: 1,

@@ -56,7 +56,7 @@ const testimonialsRow2 = [
 
 export default function Testimonials() {
   return (
-    <section className="py-16 px-6 overflow-hidden relative">
+    <section className="py-[70px] px-6 overflow-hidden relative">
       {/* Section Heading */}
       <h2 className="text-center text-5xl font-semibold text-orange-600 mb-4">
         Testimonial
@@ -68,12 +68,12 @@ export default function Testimonials() {
 
       <div className=" ">
         {/* First Row: Right → Left */}
-        <div className=" w-[1000px] flex justify-center overflow-hidden mx-auto py-2">
+        <div className=" w-[1200px] flex justify-center overflow-hidden mx-auto py-2">
           <div className="animate-scroll-left gap-10 flex w-max">
             {testimonialsRow1.map((t) => (
               <div
                 key={t.id}
-                className="min-w-[320px] max-w-[320px] bg-white border border-gray-200 rounded-lg shadow-lg p-6"
+                className="min-w-[320px] max-w-[350px] bg-white border border-gray-200 rounded-lg shadow-lg p-6"
               >
                 <p className="text-gray-600 italic mb-6">{t.text}</p>
                 <div
@@ -108,7 +108,7 @@ export default function Testimonials() {
         </div>
 
         {/* Second Row: Left → Right */}
-        <div className=" w-[1000px] flex justify-center overflow-hidden mt-10 mx-auto py-2">
+        <div className=" w-[1200px] flex justify-center overflow-hidden mt-10 mx-auto py-2">
           <div className="animate-scroll-right gap-10 flex w-max">
             {testimonialsRow2.map((t) => (
               <div

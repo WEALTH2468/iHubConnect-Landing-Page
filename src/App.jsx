@@ -6,7 +6,6 @@ import Testimonials from "./ihubConnect_sections/Testimonials";
 import Pricing from "./ihubConnect_sections/Pricing";
 import AboutUs from "./ihubConnect_sections/AboutUs";
 
-
 function App() {
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -64,7 +63,7 @@ function App() {
               alt="iHubConnect"
               className="h-8"
             />
-            <span className="text-orange-500">iHUBCONNECT</span>
+            <span className="text-orange-600">iHUBCONNECT</span>
           </a>
           <ul className="hidden md:flex gap-9">
             <li>
@@ -74,17 +73,14 @@ function App() {
             </li>
             <li>
               <a
-                href="#why-organize-section"
+                href="#whyDigitalize"
                 className="hover:text-orange-500 text-[20px]"
               >
                 Why digitalize
               </a>
             </li>
             <li>
-              <a
-                href="#features-section"
-                className="hover:text-orange-500 text-[20px]"
-              >
+              <a href="#features" className="hover:text-orange-500 text-[20px]">
                 Features
               </a>
             </li>
@@ -97,7 +93,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#about-us" className="hover:text-orange-500 text-[20px]">
+              <a href="#aboutUs" className="hover:text-orange-500 text-[20px]">
                 About iHub
               </a>
             </li>
@@ -209,18 +205,30 @@ function App() {
         </div>
       </section>
 
-      {/* Why Digitalize? */}
-      <WhyDigitalize />
+      <section className="bg[#f7f6fe]" id="whyDigitalize">
+        {/* Why Digitalize? */}
+        <WhyDigitalize />
+      </section>
 
-      {/* Features */}
-      <Features />
+      <section className="bg[#f7f6fe]" id="features">
+        {/* Features */}
+        <Features />
+      </section>
 
-      <Testimonials/>
+      <section className="bg[#f7f6fe]" id="testimonials">
+        {/* Testimonials */}
+        <Testimonials />
+      </section>
 
-      <AboutUs/>
+      <section className="bg[#f7f6fe]" id="aboutUs">
+        {/* About Us */}
+        <AboutUs />
+      </section>
 
-      {/* Pricing */}
-      <Pricing />
+      <section className="bg[#f7f6fe]" id="pricing">
+        {/* Pricing */}
+        <Pricing />
+      </section>
 
       {/* Footer */}
       <footer className="bg-neutral-900 text-gray-400 px-10 py-12">

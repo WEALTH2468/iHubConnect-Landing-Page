@@ -103,13 +103,10 @@ function Features() {
           loop
           playsInline
         >
-          <source
-            src="/videos/Smart-City-Digital-City-Video.mp4"
-            type="video/mp4"
-          />
+          <source src="/videos/ihub-video.mp4" type="video/mp4" />
         </video>
 
-        <div className="absolute top-0 left-0 w-full h-full bg-black/80 "></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black/70 "></div>
 
         <div className="px-6 z-30">
           <h1 className="text-[2.5rem] font-semibold max-w-4xl mx-auto mb-5 -mt-20">
