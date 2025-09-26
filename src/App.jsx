@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Features from "./ihubConnect_sections/Features";
 import Testimonials from "./ihubConnect_sections/Testimonials";
 import Pricing from "./ihubConnect_sections/Pricing";
+import AboutUs from "./ihubConnect_sections/AboutUs";
 
 
 function App() {
@@ -215,6 +216,9 @@ function App() {
       <Features />
 
       <Testimonials/>
+
+      <AboutUs/>
+
       {/* Pricing */}
       <Pricing />
 
