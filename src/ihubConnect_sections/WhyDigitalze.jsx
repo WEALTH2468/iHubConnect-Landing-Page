@@ -34,7 +34,7 @@ function WhyDigitalze() {
               From Organization to Growth — Here’s Why
             </p>
             <p className="text-[25px] text-gray-600">
-              Your Business Must Digitalize.
+              Your Bussiness Must Digitalize.
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ function WhyDigitalze() {
               <div
                 key={item.id}
                 className={`p-4 border-2 border-gray-300 rounded-xl transform duration-300 transition-transform ${item.rotate} ${item.color} 
-        hover:z-[999] hover:scale-105  h-[212px] -ml-10 first:ml-0 flex flex-col items-start text-left z-0 max-w-[312px]`}
+        hover:z-[999] hover:scale-105  h-[212px] -ml-10 flex flex-col items-start text-left z-0 max-w-[300px]`}
                 style={{ backgroundColor: item.backgroundColor }}
               >
                 <div className="icon text-3xl mb-2">{item.image}</div>
