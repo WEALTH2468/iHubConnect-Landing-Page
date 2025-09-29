@@ -1,5 +1,5 @@
 import React from "react";
-import { featureCard, featureScroll } from "../utils/Feature";
+import { featureCard, featureScroll } from "../utils/FeatureData";
 
 function WhyDigitalze() {
   return (
