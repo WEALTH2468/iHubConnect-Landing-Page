@@ -12,12 +12,15 @@ import {
   FaLinkedinIn,
   FaInstagram,
   FaYoutube,
+  FaBars,
+  FaTimes,
 } from "react-icons/fa";
 import { slides } from "./utils/SlidersData";
 
 function App() {
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -111,17 +114,93 @@ function App() {
             </li>
           </ul>
 
-          <Link
-            to="pricing"
-            smooth={true}
-            duration={700}
-            spy={true}
-            activeClass="bg-orange-700"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfa8OrG01KGseXvhOk5m1qGdUfu3WyQxyVdam4UdALtLtdUmw/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-block bg-orange-600 px-12 py-3 rounded-full text-white font-semibold hover:bg-orange-700 cursor-pointer"
           >
             Get Organized
-          </Link>
+          </a>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white text-2xl"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </nav>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-black/90 absolute top-full left-0 w-full py-4 flex flex-col items-center gap-4 shadow-lg">
+            <Link
+              to="home"
+              smooth={true}
+              duration={700}
+              spy={true}
+              activeClass="text-orange-600"
+              className="cursor-pointer hover:text-orange-500 text-lg text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="whyDigitalize"
+              smooth={true}
+              duration={700}
+              spy={true}
+              activeClass="text-orange-600"
+              className="cursor-pointer hover:text-orange-500 text-lg text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Why digitalize
+            </Link>
+            <Link
+              to="features"
+              smooth={true}
+              duration={700}
+              spy={true}
+              activeClass="text-orange-600"
+              className="cursor-pointer hover:text-orange-500 text-lg text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Features
+            </Link>
+            <Link
+              to="testimonials"
+              smooth={true}
+              duration={700}
+              spy={true}
+              activeClass="text-orange-600"
+              className="cursor-pointer hover:text-orange-500 text-lg text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Testimonials
+            </Link>
+            <Link
+              to="aboutUs"
+              smooth={true}
+              duration={700}
+              spy={true}
+              activeClass="text-orange-600"
+              className="cursor-pointer hover:text-orange-500 text-lg text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About iHub
+            </Link>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfa8OrG01KGseXvhOk5m1qGdUfu3WyQxyVdam4UdALtLtdUmw/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-orange-600 px-12 py-3 rounded-full text-white font-semibold hover:bg-orange-700 cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Get Organized
+            </a>
+          </div>
+        )}
       </header>
 
       {/* Hero Slider */}
@@ -133,47 +212,51 @@ function App() {
           {slides.map((slide, idx) => (
             <div
               key={slide.id}
-              className="min-w-full h-screen bg-cover bg-center relative flex items-center pl-[10%] pt-5"
+              className="min-w-full h-screen bg-cover bg-center relative flex items-center px-6 md:pl-[10%] pt-5"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className="absolute inset-0 bg-[#270f0499]"></div>
-              <div className="relative z-10 max-w-4xl px-6 text-left text-white">
-                <h1 className="text-4xl md:text-5xl font-bold leading-snug">
+              <div className="relative z-10 max-w-4xl text-left text-white">
+                <h1 className="text-xl md:text-5xl font-bold leading-snug">
                   {slide.title}{" "}
                   <span className="text-orange-600">{slide.highlight}</span>
                 </h1>
-                <p className="mt-2 text-lg md:text-xl">{slide.text}</p>
-                <div className="mt-6 flex gap-4">
+                <p className="mt-2 text-sm md:text-xl">{slide.text}</p>
+                <div className="mt-6 flex flex-col sm:flex-row gap-4">
                   <a
-                    href="#"
-                    className="bg-orange-600 px-15 py-3 rounded-full text-white font-semibold hover:bg-orange-600"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfa8OrG01KGseXvhOk5m1qGdUfu3WyQxyVdam4UdALtLtdUmw/viewform?usp=publish-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-orange-600 px-6 py-2 md:px-8 md:py-3 rounded-full text-white text-sm md:text-base font-semibold hover:bg-orange-600 text-center"
                   >
                     {slide.buttons[0]}
                   </a>
                   <a
-                    href="#"
-                    className=" px-5 py-3 rounded text-orange-600 font-semibold hover:text-white"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfa8OrG01KGseXvhOk5m1qGdUfu3WyQxyVdam4UdALtLtdUmw/viewform?usp=publish-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 md:px-5 md:py-3 rounded text-orange-600 text-sm md:text-base font-semibold hover:text-white text-center border border-orange-600 sm:border-none"
                   >
                     {slide.buttons[1]}
                   </a>
                 </div>
                 {/* Experience Counter */}
-                <div className="mt-8 bg-black/70 p-6 rounded flex items-center">
+                <div className="mt-8 bg-black/70 p-6 rounded flex flex-col md:flex-row items-center">
                   {/* Years number + label */}
-                  <div className="flex items-center text-white">
-                    <span className="text-8xl font-semibold text-orange-600">
+                  <div className="flex items-center text-white mb-4 md:mb-0">
+                    <span className="text-3xl md:text-8xl font-semibold text-orange-600">
                       {count}
                     </span>
-                    <span className="ml-2 text-3xl font-semibold relative">
+                    <span className="ml-2 text-base md:text-3xl font-semibold relative">
                       Years
                     </span>
                   </div>
 
                   {/* Divider line */}
-                  <div className="mx-6 h-25 border-l-2 border-orange-600"></div>
+                  <div className="hidden md:block mx-6 h-25 border-l-2 border-orange-600"></div>
 
                   {/* Description */}
-                  <p className="text-[18px] text-gray-200 max-w-lg leading-relaxed">
+                  <p className="text-xs md:text-[18px] text-gray-200 max-w-lg leading-relaxed text-center md:text-left">
                     For 10 Years, We've Been Committed To Helping Businesses
                     Stay Organized, Connected, And Ready For The Future — And
                     We're Just Getting Started
@@ -258,8 +341,8 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-neutral-900 text-gray-400 px-10 py-12">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+      <footer className="bg-neutral-900 text-gray-400 px-6 md:px-10 py-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* About */}
           <div>
             <img

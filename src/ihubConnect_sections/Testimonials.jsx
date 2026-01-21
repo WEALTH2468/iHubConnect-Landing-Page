@@ -5,10 +5,10 @@ export default function Testimonials() {
   return (
     <section className="py-[70px] px-6 overflow-hidden relative">
       {/* Section Heading */}
-      <h2 className="text-center text-5xl font-semibold text-orange-600 mb-4">
+      <h2 className="text-center text-2xl md:text-5xl font-semibold text-orange-600 mb-4">
         Testimonial
       </h2>
-      <p className="text-center max-w-3xl mx-auto text-[25px] text-gray-600 mb-12">
+      <p className="text-center max-w-3xl mx-auto text-sm md:text-[25px] text-gray-600 mb-12">
         Everything you need to modernize your business operations and stay
         competitive in today's digital landscape tech.
       </p>
@@ -55,14 +55,14 @@ export default function Testimonials() {
         </div>
 
         {/* Second Row: Left → Right */}
-        <div className=" w-[1200px] flex justify-center overflow-hidden mt-10 mx-auto py-2">
+        <div className="w-full max-w-[1200px] flex justify-center overflow-hidden mt-10 mx-auto py-2">
           <div className="animate-scroll-right gap-10 flex w-max">
             {testimonialsRow2.map((t) => (
               <div
                 key={t.id}
-                className="min-w-[320px] max-w-[320px] bg-[#fffcf9] border border-gray-200 rounded-lg shadow-lg p-6"
+                className="min-w-[300px] md:min-w-[320px] max-w-[320px] bg-[#fffcf9] border border-gray-200 rounded-lg shadow-lg p-6"
               >
-                <p className="text-gray-600 italic mb-6">{t.text}</p>
+                <p className="text-gray-600 text-sm md:text-base italic mb-6">{t.text}</p>
                 <div
                   className={`flex items-center gap-4 ${
                     t.align === "right"
@@ -78,8 +78,8 @@ export default function Testimonials() {
                     />
                   )}
                   <div className="flex flex-col leading-tight">
-                    <p className="font-medium text-gray-800">{t.name}</p>
-                    <span className="text-sm text-gray-500">{t.username}</span>
+                    <p className="font-medium text-sm md:text-base text-gray-800">{t.name}</p>
+                    <span className="text-xs md:text-sm text-gray-500">{t.username}</span>
                   </div>
                   {t.align === "right" && (
                     <img

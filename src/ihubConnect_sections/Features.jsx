@@ -66,10 +66,10 @@ function Features() {
   return (
     <section className="py-16 text-center font-sans">
       {/* Title */}
-      <h2 className="text-5xl font-[400] mb-4">
+      <h2 className="text-2xl md:text-5xl font-[400] mb-4">
         Why <span className="text-orange-600">Businesses Love</span> Us?
       </h2>
-      <p className="text-[25px] text-gray-600 mb-12 max-w-3xl mx-auto">
+      <p className="text-sm md:text-[25px] text-gray-600 mb-12 max-w-3xl mx-auto">
         Everything you need to modernize your business operations and stay
         competitive in today's digital landscape.
       </p>
@@ -84,10 +84,10 @@ function Features() {
             <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-orange-600 text-white text-2xl mb-4">
               {feature.icon}
             </div>
-            <h3 className="text-[22px] font-semibold mb-2 text-gray-600">
+            <h3 className="text-lg md:text-[22px] font-semibold mb-2 text-gray-600">
               {feature.title}
             </h3>
-            <p className="text-gray-600 text-[14px] leading-relaxed">
+            <p className="text-gray-600 text-xs md:text-[14px] leading-relaxed">
               {feature.description}
             </p>
           </div>
@@ -109,10 +109,10 @@ function Features() {
         <div className="absolute top-0 left-0 w-full h-full bg-[#270f0499] "></div>
 
         <div className="px-6 z-30">
-          <h1 className="text-[2.5rem] font-semibold max-w-4xl mx-auto mb-5 -mt-20">
+          <h1 className="text-xl md:text-[2.5rem] font-semibold max-w-4xl mx-auto mb-5 -mt-20">
             SMARTER SOFTWARE FOR SMARTER BUSINESSES.
           </h1>
-          <p className="text-[1.4rem] font-light max-w-2xl mx-auto mb-5">
+          <p className="text-sm md:text-[1.4rem] font-light max-w-2xl mx-auto mb-5">
             We combine innovation, technology, and seamless integration to help
             you stay connected, organized, and efficient
           </p>
@@ -121,27 +121,27 @@ function Features() {
           <div className="flex flex-col md:flex-row justify-center md:justify-start gap-12 mt-8">
             <div className="max-w-xs text-center z-30">
               <FaLaptopCode className="text-3xl mx-auto mb-3" />
-              <h3 className="text-[1.2rem] font-semibold mb-2">
+              <h3 className="text-sm md:text-[1.2rem] font-semibold mb-2">
                 Software Installation
               </h3>
-              <p className="text-[16px]">
+              <p className="text-xs md:text-[16px]">
                 Elevate your home with the best in audio and video solutions
               </p>
             </div>
             <div className="max-w-xs text-center">
               <FaPlug className="text-3xl mx-auto mb-3" />
-              <h3 className="text-[1.2rem] font-semibold mb-2">API</h3>
-              <p className="text-[16px]">
+              <h3 className="text-sm md:text-[1.2rem] font-semibold mb-2">API</h3>
+              <p className="text-xs md:text-[16px]">
                 Feel the transformative power of stories in a Dolby Atmos Cinema
                 at the comfort of your home
               </p>
             </div>
             <div className="max-w-xs text-center">
               <FaShieldAlt className="text-3xl mx-auto mb-3" />
-              <h3 className="text-[1.2rem] font-semibold mb-2">
+              <h3 className="text-sm md:text-[1.2rem] font-semibold mb-2">
                 Cybersecurity Services
               </h3>
-              <p className="text-[16px]">
+              <p className="text-xs md:text-[16px]">
                 A meeting and collaboration solution for every space
               </p>
             </div>
@@ -165,23 +165,23 @@ function Features() {
       </section>
 
       {/* GET STARTED SECTION */}
-      <section className="py-16 text-center text-gray-800 max-w-5xl mx-auto">
+      <section className="py-16 text-center text-gray-800 max-w-5xl mx-auto px-4">
         <div className="p-[2px] rounded bg-gradient-to-r from-orange-500 to-transparent inline-block mb-6">
           <button className="rounded bg-white py-1 px-6 ">Features</button>
                     
         </div>
-        <h1 className="text-5xl font-[400] text-orange-600 mb-6">
+        <h1 className="text-3xl md:text-5xl font-[400] text-orange-600 mb-6">
           Get Started
         </h1>
-        <p className="max-w-2xl mx-auto text-[22px] text-gray-600 mb-12">
+        <p className="max-w-2xl mx-auto text-lg md:text-[22px] text-gray-600 mb-12">
           We've made it easy for you to set up, so you can focus on growing your
           business — not figuring out the process.
         </p>
 
         {/* Steps */}
-        <div className="relative flex justify-between items-center max-w-[100%] mx-auto px-6">
+        <div className="relative flex flex-col md:flex-row justify-between items-center max-w-[100%] mx-auto px-6 gap-8 md:gap-0">
           {/* Center line */}
-          <div className="absolute left-0 right-0 top-11 -translate-y-1/2 h-[3px] bg-gradient-to-r from-[#FE626233] via-[#FE6262] to-[#FE626233] max-w-[800px] justify-center mx-auto"></div>
+          <div className="hidden md:block absolute left-0 right-0 top-11 -translate-y-1/2 h-[3px] bg-gradient-to-r from-[#FE626233] via-[#FE6262] to-[#FE626233] max-w-[800px] justify-center mx-auto"></div>
 
           {[
             "Setup your Organization",
@@ -195,7 +195,7 @@ function Features() {
               <div className="size-20 flex items-center justify-center bg-[#20242A] text-white font-bold rounded-full border-2 border-[#F7C8B3] mb-2 gap-[40px]">
                 {i + 1}
               </div>
-              <p className="text-base font-medium text-center max-w-[150px]">
+              <p className="text-sm md:text-base font-medium text-center max-w-[150px]">
                 {title}
               </p>
             </div>
@@ -203,17 +203,17 @@ function Features() {
         </div>
 
         {/* Stats */}
-        <div className="flex justify-around bg-gradient-to-r from-[#E44C09] to-[#451703] text-white rounded-lg max-w-[700px] mx-auto mt-12 py-8">
+        <div className="flex flex-col md:flex-row justify-around bg-gradient-to-r from-[#E44C09] to-[#451703] text-white rounded-lg max-w-[700px] mx-auto mt-12 py-8 gap-6 md:gap-0">
           <div className="text-center">
-            <h6 className="text-xl font-bold">500+</h6>
+            <h6 className="text-lg md:text-xl font-bold">500+</h6>
             <p>Companies onboarded</p>
           </div>
           <div className="text-center">
-            <h6 className="text-xl font-bold">4.8/5</h6>
+            <h6 className="text-lg md:text-xl font-bold">4.8/5</h6>
             <p>Average Rating</p>
           </div>
           <div className="text-center">
-            <h6 className="text-xl font-bold">400+</h6>
+            <h6 className="text-lg md:text-xl font-bold">400+</h6>
             <p>Success Stories</p>
           </div>
         </div>
