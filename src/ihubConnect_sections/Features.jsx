@@ -15,51 +15,51 @@ function Features() {
   const features = [
     {
       icon: <ChartBarIcon className="h-8 w-8 text-white" />,
-      title: "Analytics Dashboard",
+      title: "Interactive Dashboard",
       description:
-        "Our Analytics Dashboard provides a clear and intuitive interface for you to easily analyze your data",
+        "Get a real-time overview of tasks, sprints, and team performance with our comprehensive dashboard.",
     },
     {
       icon: <BoltIcon className="h-8 w-8 text-white" />,
-      title: "Fast Performance",
+      title: "Work Progress Tracking",
       description:
-        "Experience blazing fast performance optimized for modern business workflows.",
+        "Monitor sprint goals, active tasks, and completion status instantly to stay on schedule.",
     },
     {
       icon: <ShieldCheckIcon className="h-8 w-8 text-white" />,
-      title: "Secure & Reliable",
+      title: "Secure Archives",
       description:
-        "Your business data stays safe with enterprise-level security features.",
+        "Store contracts, records, and corporate assets in a secure, folder-based Document Library.",
     },
     {
       icon: <GlobeAltIcon className="h-8 w-8 text-white" />,
-      title: "Global Access",
+      title: "Customer CRM",
       description:
-        "Work seamlessly from anywhere with cloud-powered global accessibility.",
+        "Manage customer databases, invoices, and relationships in one unified platform.",
     },
     {
       icon: <UsersIcon className="h-8 w-8 text-white" />,
-      title: "Collaboration Tools",
+      title: "iTeams Management",
       description:
-        "Enhance teamwork with easy-to-use collaboration and communication tools.",
+        "Define roles, assign team leads, and structure your workforce for maximum efficiency.",
     },
     {
       icon: <PresentationChartLineIcon className="h-8 w-8 text-white" />,
-      title: "Data Insights",
+      title: "Performance Reports",
       description:
-        "Gain valuable insights with real-time reporting and data visualization.",
+        "Generate detailed reports on team productivity, project timelines, and business growth.",
     },
     {
       icon: <Cog6ToothIcon className="h-8 w-8 text-white" />,
-      title: "Custom Integrations",
+      title: "Role-Based Access",
       description:
-        "Easily integrate with the tools and platforms your business already uses.",
+        "Control data visibility and security with customizable permission levels for every user.",
     },
     {
       icon: <LightBulbIcon className="h-8 w-8 text-white" />,
-      title: "Smart Solutions",
+      title: "Smart Notifications",
       description:
-        "Leverage AI-driven smart solutions to modernize your operations.",
+        "Stay updated with automated alerts for deadlines, task assignments, and system updates.",
     },
   ];
 
@@ -110,11 +110,11 @@ function Features() {
 
         <div className="px-6 z-30">
           <h1 className="text-xl md:text-[2.5rem] font-semibold max-w-4xl mx-auto mb-5 -mt-20">
-            SMARTER SOFTWARE FOR SMARTER BUSINESSES.
+            EMPOWER YOUR WORKFORCE WITH INTELLIGENT TOOLS.
           </h1>
           <p className="text-sm md:text-[1.4rem] font-light max-w-2xl mx-auto mb-5">
-            We combine innovation, technology, and seamless integration to help
-            you stay connected, organized, and efficient
+            Streamline operations, enhance team collaboration, and drive growth
+            with a platform built for modern business needs.
           </p>
 
           {/* Services */}
@@ -122,27 +122,31 @@ function Features() {
             <div className="max-w-xs text-center z-30">
               <FaLaptopCode className="text-3xl mx-auto mb-3" />
               <h3 className="text-sm md:text-[1.2rem] font-semibold mb-2">
-                Software Installation
+                Cloud-Based Setup
               </h3>
               <p className="text-xs md:text-[16px]">
-                Elevate your home with the best in audio and video solutions
+                Get started instantly with no complex installation. Access your
+                workspace from any browser.
               </p>
             </div>
             <div className="max-w-xs text-center">
               <FaPlug className="text-3xl mx-auto mb-3" />
-              <h3 className="text-sm md:text-[1.2rem] font-semibold mb-2">API</h3>
+              <h3 className="text-sm md:text-[1.2rem] font-semibold mb-2">
+                Seamless Integration
+              </h3>
               <p className="text-xs md:text-[16px]">
-                Feel the transformative power of stories in a Dolby Atmos Cinema
-                at the comfort of your home
+                Connect your existing tools and workflows effortlessly with our
+                flexible API support.
               </p>
             </div>
             <div className="max-w-xs text-center">
               <FaShieldAlt className="text-3xl mx-auto mb-3" />
               <h3 className="text-sm md:text-[1.2rem] font-semibold mb-2">
-                Cybersecurity Services
+                Secure Collaboration
               </h3>
               <p className="text-xs md:text-[16px]">
-                A meeting and collaboration solution for every space
+                Work together safely with enterprise-grade security and
+                role-based access controls.
               </p>
             </div>
           </div>
@@ -205,7 +209,7 @@ function Features() {
         {/* Stats */}
         <div className="flex flex-col md:flex-row justify-around bg-gradient-to-r from-[#E44C09] to-[#451703] text-white rounded-lg max-w-[700px] mx-auto mt-12 py-8 gap-6 md:gap-0">
           <div className="text-center">
-            <h6 className="text-lg md:text-xl font-bold">500+</h6>
+            <h6 className="text-lg md:text-xl font-bold">50+</h6>
             <p>Companies onboarded</p>
           </div>
           <div className="text-center">
@@ -213,7 +217,7 @@ function Features() {
             <p>Average Rating</p>
           </div>
           <div className="text-center">
-            <h6 className="text-lg md:text-xl font-bold">400+</h6>
+            <h6 className="text-lg md:text-xl font-bold">100+</h6>
             <p>Success Stories</p>
           </div>
         </div>

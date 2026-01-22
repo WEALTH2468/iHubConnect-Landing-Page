@@ -34,7 +34,7 @@ function WhyDigitalze() {
               From Organization to Growth — Here’s Why
             </p>
             <p className="text-sm md:text-[25px] text-gray-600">
-              Your Bussiness Must Digitalize.
+              Your Business Must Digitalize.
             </p>
           </div>
         </div>
