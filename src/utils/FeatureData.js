@@ -10,9 +10,9 @@ export const featureCard = [
   {
     id: 1,
     description:
-      "Keep every task, project, and follow-up in one place — no more scattered files or missed deadlines.",
+      "Manage sprints, active tasks, and workflows with our advanced 'Work Progress' system. Set goals, objectives, and track ownership effortlessly.",
     subDescription:
-      "We make work simpler, customers happier, and growth easier.",
+      "We make work simpler, ensure accountability, and streamline task completion.",
     icon: PencilSquareIcon,
     backgroundColor: "#00656d",
     rotate: "-rotate-8",
@@ -21,9 +21,9 @@ export const featureCard = [
   {
     id: 2,
     description:
-      "Connect your team, improve communication, and get more done together.",
+      "Structure your organization with 'iTeams'. Define team leads, members, and descriptions to ensure everyone knows their role.",
     subDescription:
-      "From teamwork to customer care, we help businesses do more with less stress.",
+      "From team management to clear organizational structures, we help businesses collaborate effectively.",
     icon: CubeIcon,
     backgroundColor: "#eaad43",
     rotate: "rotate-0",
@@ -32,9 +32,9 @@ export const featureCard = [
   {
     id: 3,
     description:
-      "Your data stays safe, securely stored, and well-organized — with records preserved and protected from damages.",
+      "Centralize your corporate memory. Store records, contracts, and assignments in a structured 'Document Library' with folder-based organization.",
     subDescription:
-      "Tools that grow with your business, built to adapt as your needs evolve.",
+      "Your data stays safe, securely stored, and easily accessible whenever you need it.",
     icon: FolderOpenIcon,
     backgroundColor: "#e89d80",
     rotate: "rotate-8",
@@ -43,9 +43,9 @@ export const featureCard = [
   {
     id: 4,
     description:
-      "Track performance across every part of your business with detailed reports and real-time analytics.",
+      "Gain insights with dynamic dashboards. Track team performance, celebrate birthdays, and manage your entire customer database effectively.",
     subDescription:
-      "Giving you the clarity and confidence to make smarter decisions.",
+      "Giving you the clarity and confidence to make smarter decisions with real-time data.",
     icon: ChartBarIcon,
     backgroundColor: "#aedc45",
     rotate: "rotate-0",
